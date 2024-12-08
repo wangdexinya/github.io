@@ -93,46 +93,7 @@
             <p style="text-align: right;"></p>
         </div>
     </div>
-    <a class="a" id="stt" onclick="
-        $('#ldb').hide();
-        document.body.style.overflow='auto';
-        $(this).remove()"><span style="font-size: 15px;">已載入完成</span><span style="font-size: 30px;">開始</span></a>
-    <script>
-        
-        let dl=[-1,10,8,13,9,14,13,18];let nt=4550;
-        setTimeout(() => {
-            $('#ldb>.lay.0').removeClass('show');
-            setTimeout(() => {
-                $('#ldb>.lay.0').removeClass('show0');
-            }, 500);
-        }, nt-530);
-for (let i = 1; i < 8; i++) {
-    nt+=dl[i]*1000;
-    setTimeout(() => {
-        $('#ldb>.lay.'+i).addClass('show0');
-        setTimeout(() => {
-        $('#ldb>.lay.'+i).addClass('show');
-            
-        }, 20);
-        setTimeout(() => {
-            $('#ldb>.lay.'+i).removeClass('show');
-            setTimeout(() => {
-                $('#ldb>.lay.'+i).removeClass('show0');
-            }, 500);
-        }, dl[i]*1000-1000);
-    }, nt-dl[i]*1000);
-}
-    setTimeout(() => {
-        $('#ldb>.lay.l').addClass('show0');
-        setTimeout(() => {
-        $('#ldb>.lay.l').addClass('show');
-            
-        }, 20);
-    }, nt);
-
-document.body.onload=()=>{
-    $('#stt').addClass('show')
-};
+    
 
     </script>
 
